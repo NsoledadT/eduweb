@@ -34,7 +34,7 @@ grails.project.dependency.resolution = {
 
     repositories {
         inherits true // Whether to inherit repository definitions from plugins
-
+		mavenRepo 'http://repo.spring.io/milestone'
         grailsPlugins()
         grailsHome()
         mavenLocal()

@@ -2,7 +2,7 @@ package ar.edu.unlam.eduweb
 
 class CursoUsuario {
 	Curso curso
-	Usuario usuario
+	User usuario
 	
     static constraints = {
     }

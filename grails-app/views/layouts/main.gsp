@@ -19,13 +19,12 @@
 		<r:layoutResources />
 	</head>
 	<body>
-	    <div id="grailsLogo" role="banner">;
-        <a href="http://grails.org"><img src="{resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a>
-        <security:ifLoggedIn></a>
-        <span style="float:right;">Logged user: <security:user/></span>;
-         </security:ifLoggedIn></a>
+	    <div id="grailsLogo" role="banner">
+        <sec:ifLoggedIn></a>
+        <h1>Bienvenido, Alumno: ${applicationContext.springSecurityService.currentUser.username}</h1>
+        </sec:ifLoggedIn></a>
          </div>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
+		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'eduWeb.png')}" alt="Grails"/></a></div>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>

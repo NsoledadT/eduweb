@@ -5,7 +5,7 @@ class TemaForo {
 	String titulo
 	String mensaje
 	Date fecha
-	Usuario autorTema
+	User autorTema
 	CategoriaTema categoriaForo
 	static hasMany = [comentarios: Comentario]//si categoria ya tiene comentarios para que los necesita esta clase??
 	
