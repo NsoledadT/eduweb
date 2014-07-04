@@ -4,21 +4,24 @@
 	<title><g:message code="springSecurity.login.title"/></title>
 	<style type='text/css' media='screen'>
 	#login {
-		margin: 15px 0px;
+		
 		height:auto;
 		padding: 0px;
 		text-align: center;
-		background-color:#F7D358;
-		margin-top:-70px;
+		background-color:#F2F2F2;
+		margin-top:-100px;
+		float:left;
 	}
 
 	#login .inner {
 		width: 340px;
+		height:350px;
+		float:right;
+		padding-top:50px;
 		padding-bottom: 6px;
-		margin: 10px auto;
+		margin-right:40px;
 		text-align: left;
-		border: 2px solid #0B0B61;
-		background-color:#CEECF5;
+		background-color:#dbdbdb ;
 		-moz-box-shadow: 2px 2px 2px #ffffff;
 		-webkit-box-shadow: 2px 2px 2px #ffffff;
 		-khtml-box-shadow: 2px 2px 2px #ffffff;
@@ -27,12 +30,14 @@
 
 	#login .inner .fheader {
 		padding: 18px 26px 14px 26px;
-		background-color:#FACC2E;
+		background-color:#ff5210;
 		margin: 0px 0 14px 0;
 		color: #2e3741;
 		font-size: 18px;
 		font-weight: bold;
 	}
+	
+	
 
 	#login .inner .cssform p {
 		clear: left;
@@ -65,16 +70,18 @@
 		margin-left: 15px;
 	}
 	
-	#login  .texto_ingreso h1{
-	margin-left:30px;
-	margin-top:60px;
-	color:#0B0B3B;
+	#login .texto_principal{
+	width:500px;;
+    float:left;
+    text-align:left;
+    margin-left:30px;
+    margin-top:60px;
 	}
 	
-	#login .texto_ingreso p{
-	margin-left:30px;
-	color:#0B0B3B;
-		}
+	#login .texto_principal h1{
+	font-size:40px;
+	color:#2E9AFE;
+	}
 		
 	#login  .espacio_blanco {
 	height:40px;
@@ -99,15 +106,38 @@
 	#login .inner .chk {
 		height: 12px;
 	}
+	
+	#medio_bajo{
+	background:url(../images/medio_bajo.jpg) repeat-x;
+	height:300px;
+	float:left;
+	}
+	
+	.texto{
+	 width:300px;
+	 float:left;
+	 text-align:left;
+	 margin-left:20px;
+	 margin-top:80px;
+	}
+	
+	.texto p{
+	 font-size:13px;
+	}
+	
 	</style>
 </head>
 
 <body>
 
 <div id='login'>
-	<div class='texto_ingreso'>
-			<h1>¿Sos Alumno o Profesor?</h1>
-			<p>Ingresa al sistema</p>
+	<div class='texto_principal'>
+	     <h1>Plataforma Educativa</h1>
+		 <p>Lorem Ipsum is simply dummy text of the printing 
+	     and typesetting industry. Lorem Ipsum has been the 
+	     industry's standard dummy text ever since the 1500s,
+	     when an unknown printer took a galley </p>
+	     <img src='../images/chicos.png' width='384' height='147'/>
 	</div>
     
 	<div class='inner'>
@@ -139,7 +169,29 @@
 			</p>
 		</form>
 	</div>
-	<div class='espacio_blanco'></div>
+	<div id='medio_bajo'>
+	  <div class='texto'>
+	     <h1>Colaboración</h1>
+	     <p>Lorem Ipsum is simply dummy text of the printing 
+	     and typesetting industry. Lorem Ipsum has been the 
+	     industry's standard dummy text ever since the 1500s,
+	     when an unknown printer took a galley </p>
+	  </div>
+	   <div class='texto'>
+	     <h1>Integración</h1>
+	     <p>Lorem Ipsum is simply dummy text of the printing 
+	     and typesetting industry. Lorem Ipsum has been the 
+	     industry's standard dummy text ever since the 1500s,
+	     when an unknown printer took a galley </p>
+	  </div>
+	   <div class='texto'>
+	      <h1>Comunicación</h1> 
+	      <p>Lorem Ipsum is simply dummy text of the printing 
+	     and typesetting industry. Lorem Ipsum has been the 
+	     industry's standard dummy text ever since the 1500s,
+	     when an unknown printer took a galley </p>
+	  </div>
+	</div>
 </div>
 <script type='text/javascript'>
 	<!--

@@ -49,14 +49,23 @@ body {
 }
 
 #grailsLogo {
-	background-color:#0B0B61;
-	
+	background:url("../images/fondo_encabezado.jpg") repeat-x;
+	height:250px;
+}
 
+#logo{
+	margin-left:30px;
+	margin-top:20px;
+
+}
+#cuadradito{
+	float:right;
+	margin-top:-125px;
 }
 
 #grailsLogo h1{
 	float:right;
-	color:white;
+	color:#2E9AFE;
 	margin-right:30px;
 
 	}
@@ -99,11 +108,6 @@ img {
 
 /* GENERAL */
 
-#grailsLogo a {
-	display: inline-block;
-	margin: 1em;
-}
-
 .content {
 }
 
@@ -118,13 +122,13 @@ img {
 }
 
 .footer {
-	background: #0B0B3B;
+	background: url('../images/pie.jpg') repeat-x;
 	color: #000;
 	clear: both;
 	font-size: 0.8em;
 	margin-top: -2em;
 	padding: 1em;
-	min-height: 1em;
+	min-height: 3em;
 }
 
 .footer a {

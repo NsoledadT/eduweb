@@ -20,11 +20,13 @@
 	</head>
 	<body>
 	    <div id="grailsLogo" role="banner">
-        <sec:ifLoggedIn></a>
+        <sec:ifLoggedIn>
         <h1>Bienvenido, Alumno: ${applicationContext.springSecurityService.currentUser.username}</h1>
-        </sec:ifLoggedIn></a>
+        </sec:ifLoggedIn>
+        <img id='logo' src="${resource(dir: 'images', file: 'logotipo.png')}" alt="Grails"/>
+        <img id='cuadradito' src="${resource(dir: 'images', file: 'cuadradito_arriba.png')}" alt="Grails"/>
          </div>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'eduWeb.png')}" alt="Grails"/></a></div>
+
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
